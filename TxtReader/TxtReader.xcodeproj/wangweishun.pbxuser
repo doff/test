@@ -1,0 +1,163 @@
+// !$*UTF8*$!
+{
+	1D6058900D05DD3D006BFB54 /* TxtReader */ = {
+		activeExec = 0;
+		executables = (
+			6BA5831213F9759900B66D7F /* TxtReader */,
+		);
+	};
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = 6BA5831213F9759900B66D7F /* TxtReader */;
+		activeSDKPreference = iphonesimulator4.3;
+		activeTarget = 1D6058900D05DD3D006BFB54 /* TxtReader */;
+		codeSenseManager = 6BA5831F13F975B100B66D7F /* Code sense */;
+		executables = (
+			6BA5831213F9759900B66D7F /* TxtReader */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					341,
+					20,
+					48.16259765625,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 335115673;
+			PBXWorkspaceStateSaveDate = 335115673;
+		};
+		perUserProjectItems = {
+			6BA5832813F9760F00B66D7F /* PBXTextBookmark */ = 6BA5832813F9760F00B66D7F /* PBXTextBookmark */;
+			6BA5832913F9760F00B66D7F /* PBXTextBookmark */ = 6BA5832913F9760F00B66D7F /* PBXTextBookmark */;
+			6BA5832A13F9760F00B66D7F /* PlistBookmark */ = 6BA5832A13F9760F00B66D7F /* PlistBookmark */;
+			6BA5832B13F9760F00B66D7F /* PBXBookmark */ = 6BA5832B13F9760F00B66D7F /* PBXBookmark */;
+			6BA5832C13F9760F00B66D7F /* PBXTextBookmark */ = 6BA5832C13F9760F00B66D7F /* PBXTextBookmark */;
+		};
+		sourceControlManager = 6BA5831E13F975B100B66D7F /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	53BC164411CA18C30030094B /* ReadMe.txt */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {5934, 1118}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 2750}";
+		};
+	};
+	53BC194911CA35740030094B /* 佛本是道.txt */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {5435, 330156}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{1732, 3567}";
+		};
+	};
+	53BC196911CA36510030094B /* codeguid.txt */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {578, 2492}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 457}";
+		};
+	};
+	6BA5831213F9759900B66D7F /* TxtReader */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = TxtReader;
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	6BA5831E13F975B100B66D7F /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	6BA5831F13F975B100B66D7F /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	6BA5832813F9760F00B66D7F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 53BC194911CA35740030094B /* 佛本是道.txt */;
+		name = "佛本是道.txt: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 3567;
+		vrLoc = 1732;
+	};
+	6BA5832913F9760F00B66D7F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 53BC164411CA18C30030094B /* ReadMe.txt */;
+		name = "ReadMe.txt: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 2750;
+		vrLoc = 0;
+	};
+	6BA5832A13F9760F00B66D7F /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 53BC18B111CA2B2C0030094B /* offset.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = /Users/wangweishun/pro/TxtReader/TxtReader/ResurcesBook/offset.plist;
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	6BA5832B13F9760F00B66D7F /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 53BC196911CA36510030094B /* codeguid.txt */;
+	};
+	6BA5832C13F9760F00B66D7F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 53BC196911CA36510030094B /* codeguid.txt */;
+		name = "codeguid.txt: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 457;
+		vrLoc = 0;
+	};
+}

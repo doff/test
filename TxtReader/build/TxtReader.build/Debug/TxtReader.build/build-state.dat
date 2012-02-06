@@ -1,0 +1,87 @@
+TTxtReader
+v7
+r1
+
+N/Users/wangweishun/pro/TxtReader/TxtReader/MainWindow.xib
+c000000004C19D27C0000000000002662
+t1276760700
+s9826
+
+N/Users/wangweishun/pro/TxtReader/TxtReader/ResurcesBook/ReadMe.txt
+c000000004A15F9F400000000000024AB
+t1242954228
+s9387
+
+N/Users/wangweishun/pro/TxtReader/TxtReader/ResurcesBook/codeguid.txt
+c000000004C1A03450000000000002017
+t1276773189
+s8215
+
+N/Users/wangweishun/pro/TxtReader/TxtReader/ResurcesBook/offset.plist
+c000000004C19F39100000000000000B5
+t1276769169
+s181
+
+N/Users/wangweishun/pro/TxtReader/TxtReader/ResurcesBook/佛本是道.txt
+c000000004C1A034E000000000059F9D6
+t1276773198
+s5896662
+
+N/Users/wangweishun/pro/TxtReader/TxtReader/build/Debug/TxtReader.app
+t2
+s0
+
+N/Users/wangweishun/pro/TxtReader/TxtReader/build/Debug/TxtReader.app/Contents/Info.plist
+t2
+s0
+
+N/Users/wangweishun/pro/TxtReader/TxtReader/build/Debug/TxtReader.app/Contents/PkgInfo
+t2
+s0
+
+N/Users/wangweishun/pro/TxtReader/TxtReader/build/Debug/TxtReader.app/Contents/Resources/MainWindow.nib
+t2
+s0
+
+N/Users/wangweishun/pro/TxtReader/TxtReader/build/Debug/TxtReader.app/Contents/Resources/ReadMe.txt
+t2
+s0
+
+N/Users/wangweishun/pro/TxtReader/TxtReader/build/Debug/TxtReader.app/Contents/Resources/codeguid.txt
+t2
+s0
+
+N/Users/wangweishun/pro/TxtReader/TxtReader/build/Debug/TxtReader.app/Contents/Resources/offset.plist
+t2
+s0
+
+N/Users/wangweishun/pro/TxtReader/TxtReader/build/Debug/TxtReader.app/Contents/Resources/佛本是道.txt
+t2
+s0
+
+NTxtReader-Info.plist
+c000000004C1A03D70000000000000389
+t1276773335
+s905
+
+CCompileXIB /Users/wangweishun/pro/TxtReader/TxtReader/MainWindow.xib
+r0
+
+CCopyPlistFile /Users/wangweishun/pro/TxtReader/TxtReader/build/Debug/TxtReader.app/Contents/Resources/offset.plist ResurcesBook/offset.plist
+r0
+
+CCpResource build/Debug/TxtReader.app/Contents/Resources/ReadMe.txt ResurcesBook/ReadMe.txt
+r0
+
+CCpResource build/Debug/TxtReader.app/Contents/Resources/codeguid.txt ResurcesBook/codeguid.txt
+r0
+
+CCpResource build/Debug/TxtReader.app/Contents/Resources/佛本是道.txt ResurcesBook/佛本是道.txt
+r0
+
+CProcessInfoPlistFile /Users/wangweishun/pro/TxtReader/TxtReader/build/Debug/TxtReader.app/Contents/Info.plist TxtReader-Info.plist
+r0
+
+CTouch /Users/wangweishun/pro/TxtReader/TxtReader/build/Debug/TxtReader.app
+r0
+

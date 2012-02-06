@@ -1,0 +1,184 @@
+﻿
+命名规范分类：
+  COCOA的命名规则偏向于全称的命名，对于缩掠命名不是很赞成，所以不管是实例，变量还是函数都是以接近英文
+  的语言的命名规范（怎么在英文中说就怎么在代码中写，这中命名规范对于我以前所看到的C++的命名略显臃肿）
+一：Code Naming Basics(代码基础命名)
+1.General Principles（一般原则）
+	例：
+	insertObject: atIndex:
+	removeObject:
+	
+2.Prefixes（前缀）		
+		NS Foundation and sub
+		NS Application Kit and sub
+		AB Address Book     and sub
+		IB Interface Builder  and sub 
+		C  一般的c/c++类前缀 		
+		
+3.Typographic Conventions（排版惯例）
+	a.对于多个单词组成的名字，不要用的名称或分隔部分标点符号
+（下划线，破折号，等等），而是大写
+	fileExistsAtPath:isDirectory:
+	B.对于函数和常量的名称，以此作为对相关的类和相同前缀大写
+		嵌入式词的第一个字母。
+		NSRunAlertPanel
+		NSCellDisabled	
+
+4.Class and Protocol Names（类和协议命名）
+	a.一个类的名称应包含一个名词，清楚地表明什么类（或类的对象）
+	代表或做的事。
+
+	b.协议组是最不与任何特定类别相关的相关的方法。这种类型的
+协议应命名为使该协议将不会与一个类混淆
+	NSLocking
+5.Header Files（头文件）
+	头文件最重要的是可以从名称上直接看出文件中包含什么。
+	NSApplication.h The NSApplication class	
+
+
+二：Naming Methods（命名方法）
+1.General Rules（一般原则）
+	- (void)invokeWithTarget:(id)target;
+	- (void)selectTabViewItem:(NSTabViewItem *)tabViewItem
+	- (void)sendAction:(SEL)aSelector to:(id)anObject forAllCells:(BOOL)flag;
+	- (id)viewWithTag:(int)aTag;
+	
+2.Accessor Methods（访问器方法）
+	a.赋值一般以set开头接受者的名称为第二个字母。
+	b.属性获取的时候省略get直接以名称为函数名。
+	c.状态检测以is加需要检测的名称，返回值为BOOL
+	
+	- (void)setColor:(NSColor *)aColor;
+	- (NSColor *)color;
+	- (void)setAdjective:(BOOL)flag;
+	- (BOOL)isAdjective;
+3.Delegate Methods（委托方法）
+　委托的原则一般是事件的发送者　+　事件的状态　+　事件的名称
+　返回值包括事件的执行状态的完成结果YES/NO　，或者事件执行某个动作后的返回值。
+　对于一些事件我们需要在他的委托内部来处理一些事情，而不仅仅是检测他的执行状态。
+	- (BOOL)tableView:(NSTableView *)tableView shouldSelectRow:(int)row;
+	- (BOOL)application:(NSApplication *)sender openFile:(NSString *)filename;
+	- (BOOL)applicationOpenUntitledFile:(NSApplication *)sender;
+	- (void)browserDidScroll:(NSBrowser *)sender;
+	- (NSUndoManager *)windowWillReturnUndoManager:(NSWindow *)window;
+
+4.Collection Methods （收集方法）
+		事件的Collection 往往在NArray NSSet , 等使用很多大致的操作方法如下：
+	- (void)addElement:(elementType)anObj;
+	- (void)removeElement:(elementType)anObj;
+	- (NSArray *)elements;
+	- (void)addLayoutManager:(NSLayoutManager *)obj;
+	- (void)removeLayoutManager:(NSLayoutManager *)obj;
+	- (NSArray *)layoutManagers;
+	- (void)insertLayoutManager:(NSLayoutManager *)obj atIndex:(int)index;
+	- (void)removeLayoutManagerAtIndex:(int)index;
+	
+5.Method Arguments  （方法中的参数）
+	下面列出了几个命名参数的规则：
+	由于与方法
+	a.作为一个方法第一个参数与第一个名称是连续的。（例如，removeObject：（身份证）anObject）
+	b.指针的类型应该同过函数的返回值去确定而不应该通过，指针名称去反映它。
+	c.避免一个和两个字母的名字为参数。
+	d.不要使用缩写，缩写所节省的字母也就几个可是会引起表达的不清楚。
+	...action:(SEL)aSelector
+	...alignment:(int)mode
+	...atIndex:(int)index
+	...content:(NSRect)aRect
+	...doubleValue:(double)aDouble
+	...floatValue:(float)aFloat
+	...font:(NSFont *)fontObj
+	...frame:(NSRect)frameRect
+	...intValue:(int)anInt
+	...keyEquivalent:(NSString *)charCode
+	...length:(int)numBytes
+	...point:(NSPoint)aPoint
+	...stringValue:(NSString *)aString
+	...tag:(int)anInt
+	...target:(id)anObject
+	...title:(NSString *)aString
+6.Private Methods  （私有方法）
+		私有方法是要隐藏在类中不被用户所看到的，所以他具有特殊的命名规则，我们通常以
+		类名+_m 作为前缀  （因为APPLE对下画线保留使用所以我们要避免直接使用下画线）
+三：Naming Functions（函数命名）
+		Objective-c中的函数和C/C++中的函数没有明显的区别具有相同的使用方法。
+		大多数函数以动词描述名词
+		：NSHighlightRect
+			NSDeallocateObject
+		查询属性的函数的命名如下规则：
+			a.如果函数返回其本身的属性则省略动词
+					：unsigned int NSEventMaskFromType(NSEventType type)
+						float NSHeight(NSRect aRect)
+			b.如果要以参数经过计算来获得某个结果用Get
+				const char *NSGetSizeAndAlignment(const char *typePtr, unsigned int *sizep,unsigned int *alignp)
+			c.如果函数去执行一个动作我们 ，将以他返回一个BOOL型的值来检测他是否执行成功。
+				bool setValue( int value )；
+
+四：Naming Instance Variables and Data Types(命名实例变量和数据类型)
+1.Instance Variables（实例变量命名）
+　　　避免创建公共的实例变量，开发者应当同过对象本身的接口去定义实例的数据存储。
+			应用@private or @protected　限定确定实例属于私有数据还是公有数据。
+			对于一个变量要设置他的属性存储。设置设置器和访问器。
+
+2.Constants（常数命名）
+
+		a.Enumerated constants（枚举命名）
+			下面给出例子：
+				typedef enum _NSMatrixMode {
+								NSRadioModeMatrix = 0,
+								NSHighlightModeMatrix = 1,
+								NSListModeMatrix = 2,
+								NSTrackModeMatrix = 3
+								} NSMatrixMode;
+								
+								enum {
+							NSBorderlessWindowMask = 0,
+							NSTitledWindowMask = 1 << 0,
+							NSClosableWindowMask = 1 << 1,
+							NSMiniaturizableWindowMask = 1 << 2,
+							NSResizableWindowMask = 1 << 3
+							};
+		b.Constants created with const （如何创建常量）
+				常量的创建一般用　const　限定 
+　　		const float NSLightGray;
+		c.Other types of constants（ 其他常量的命名）
+				一般来说，不要使用＃define预处理器命令创建常量。对于整数常量，使用枚举，以及浮点常量使用常量限定符，如上所述
+3.Exceptions and Notifications  （异常和通知的命名）
+	　a.Exceptions
+			[Prefix] + [UniquePartOfName] + Exception
+						NSColorListIOException
+						NSColorListNotEditableException
+						NSDraggingException
+						NSFontUnavailableException
+						NSIllegalSelectorException
+						
+		b.Notifications
+			[Name of associated class] + [Did | Will] + [UniquePartOfName] + Notification
+						NSApplicationDidBecomeActiveNotification
+						NSWindowDidMiniaturizeNotification
+						NSTextViewDidChangeSelectionNotification
+						NSColorPanelColorDidChangeNotification
+	
+
+五：Acceptable Abbreviations and Acronyms(可接受的缩略语)
+　　　objective-c对与缩写不是很提倡因为他觉得缩写代码的必要性不是很大，而造成的麻烦是相当大的，
+			但是对于已经通用的一些缩写还是支持的，里给出了OBJECTIVE-C中原有的一些大家都认同的缩写
+			alloc Allocate
+			alt Alternate
+			app　Application. For example, NSApp the global application object. However, “application” is
+			　　　spelled out in delegate methods, notifications, and so on.			
+			calc Calculate
+			dealloc Deallocate
+			func Function.
+			horiz Horizontal.
+			info Information
+			init Initialize (for methods that initialize new objects)
+			int Integer
+			max Maximum
+			min Minimum
+			msg Message
+			nib Interface Builder archive
+			pboard Pasteboard (but only in constants)
+			rect Rectangle
+			Rep Representation (used in class name such as NSBitmapImageRep)
+			temp Temporary
+			vert Vertical
